@@ -15,5 +15,4 @@ RUN tar -xzf /tmp/dependencies/apache-jmeter-${JMETER_VERSION}.tgz -C /var/lib &
     unzip -oq "/tmp/dependencies/JMeterPlugins-*.zip" -d $JMETER_HOME && \
     rm -rf /tmp/dependencies
 
-ENV PATH $PATH:$JMETER_BIN
-ENTRYPOINT [ "/var/lib/apache-jmeter-3.1/bin/jmeter-server" ] 
+ENV PATH $JMETER_BIN:$PATH
