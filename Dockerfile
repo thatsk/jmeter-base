@@ -16,4 +16,3 @@ RUN tar -xzf /tmp/dependencies/apache-jmeter-${JMETER_VERSION}.tgz -C /var/lib &
     rm -rf /tmp/dependencies
 
 ENV PATH $PATH:$JMETER_BIN
-ENTRYPOINT [ "/var/lib/apache-jmeter-3.1/bin/jmeter-server" ] 
